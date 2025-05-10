@@ -1,0 +1,298 @@
+/* CSS yang sudah ada */
+.container {
+  padding: 20px;
+  background-color: #3D8D7A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.topFilter {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  background-color: #3D8D7A;
+}
+
+.inputField {
+  flex: 1;
+  padding: 12px 16px;
+  background-color: #3D8D7A;
+  border: solid;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+}
+
+.button {
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-style: solid;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #3D8D7A;
+}
+
+.button:hover {
+  background-color: #B1D9AA;
+}
+
+.mainContent {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+/*Chart*/
+
+.chartPlaceholder {
+  padding: 2%;
+  flex: 2;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column; /* ini bikin card di atas, chart di bawah */
+  align-items: stretch; /* biar item ikut lebar kotak */
+  justify-content: flex-start; /* start dari atas */
+  gap: 20px; /* jarak antara card & chart */
+  font-size: 10px;
+  color: black;
+  background-color: #f5f5f5;
+}
+
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #3D8D7A;
+}
+
+.sidebarItem {
+  flex: 1;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: black;
+  padding: 16px;
+  background-color: white;
+}
+
+.sidebarItem1 {
+  flex: 1;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 18px;
+  color: black;
+  padding: 16px;
+  background-color: white;
+}
+
+
+/* Artikel container */
+.articleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.articleCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  flex: 1; /* Artikel card mengambil ruang yang ada */
+  height: 250px;
+  width: 380px;
+}
+
+.articleImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.articleTitle {
+  font-size: 10px;
+  margin-top: 8px;
+  font-weight: bold;
+  color: black;
+}
+
+.articleDescription {
+  font-size: 8px;
+  color: #666;
+}
+
+.articleLink {
+  font-size: 12px;
+  color: black;
+}
+
+
+
+/* Navigasi Artikel */
+.navButton {
+  background-color: #3D8D7A;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 8px;
+}
+
+.navButton:hover {
+  background-color: #A3D1C6;
+}
+
+/* Chatbot */
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.chatMessages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: #999;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 12px 12px 0 12px;
+  max-width: 70%;
+  font-size: 14px;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background-color: #ddd;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 12px 12px 12px 0;
+  max-width: 70%;
+  font-size: 14px;
+}
+
+.chatInputArea {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  border-top: 1px solid #ccc;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #3D8D7A;
+  color: white;
+}
+
+.chatInput::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+
+.chatbotWrapper {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px; /* atau tinggi sesuai kebutuhan */
+  padding-right: 4px; /* agar tidak potong scrollbar */
+}
+
+.sendButton {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #B1D9AA;
+}
+
+
+/* Modern Chat Bubble */
+.userMessageWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botMessageWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.botAvatar {
+  border-radius: 50%;
+}
+
+/* User bubble */
+.userMessage {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 16px 16px 0 16px;
+  max-width: 70%;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Bot bubble */
+.botMessage {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 16px 16px 16px 0;
+  max-width: 70%;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.helpText {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  animation: fadeIn 0.5s ease;
+}
