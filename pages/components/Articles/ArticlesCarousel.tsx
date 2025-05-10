@@ -1,7 +1,7 @@
 // ArticlesCarousel.tsx
 import React from 'react';
 import Image from 'next/image';
-import styles from '@/pages/dashboard/dashboard.module.css';
+import styles from './Dashboard.module.css';
 
 interface Article {
   date: string;
