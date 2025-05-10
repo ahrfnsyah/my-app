@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
-import styles from './dashboard.module.css';
+import styles from '@/pages/dashboard/dashboard.module.css';
 import PriceChart from '../components/Chart/PriceChart';
 import BarPriceChart from '../components/Chart/BarPriceChart';
 import AreaPriceChart from '../components/Chart/AreaPriceChart'; // ✅ Tambahan
