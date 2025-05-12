@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 import React, { useEffect, useRef, useState } from 'react';
-import styles from '@/pages/dashboard/dashboard.module.css';
+import styles from '@/styles/dashboard.module.css';
 import { sendChatMessage } from '@/lib/api';
 import Image from 'next/image';
 
