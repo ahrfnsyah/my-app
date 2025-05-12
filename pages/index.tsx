@@ -8,7 +8,7 @@ export default function Home() {
       <p className={styles.title1}> see your future commodity price prediction </p>
       <p className={styles.title1}> and read related articlessss </p>
 
-      <Link href="/dashboard" className={styles.button}>Go to Dashboard</Link>
+      <Link href="./dashboard" className={styles.button}>Go to Dashboard</Link>
 
     </div>
   );

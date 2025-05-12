@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect } from 'react';
 import styles from '@/pages/dashboard/dashboard.module.css';
-import PriceChart from '../components/Chart/PriceChart';
-import BarPriceChart from '../components/Chart/BarPriceChart';
-import AreaPriceChart from '../components/Chart/AreaPriceChart'; // ✅ Tambahan
-import PriceSummaryCard from '../components/Chart/PriceSummaryCard';
-import ArticleCarousel from '../components/Articles/ArticlesCarousel';
-import ChatBot from '../components/Chatbot/Chatbot';
+import PriceChart from '@/components/Chart/PriceChart';
+import BarPriceChart from '@/components/Chart/BarPriceChart';
+import AreaPriceChart from '@/components/Chart/AreaPriceChart'; // ✅ Tambahan
+import PriceSummaryCard from '@/components/Chart/PriceSummaryCard';
+import ArticleCarousel from '@/components/Articles/ArticlesCarousel';
+import ChatBot from '@/components/Chatbot/Chatbot';
 import { fetchPrediction, fetchArticles } from '@/lib/api';
 import { parseISO, format, startOfWeek, startOfMonth } from 'date-fns';
 
