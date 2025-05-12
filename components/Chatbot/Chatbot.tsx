@@ -127,7 +127,7 @@ const ChatBot: React.FC = () => {
       </div>
       {/* Alert kecil */}
 {emptyError && (
-  <div className={styles.errorMessage}>Silakan tulis pertanyaan terlebih dahulu!</div>
+  <div className={styles.errorMessage}>Silakan tulis pertanyaan terlebih dahulu</div>
 )}
     </div>
   );
