@@ -50,7 +50,6 @@ export default function Footer() {
             <li>Color wheel</li>
             <li>Support</li>
             <li>Developers</li>
-            <li>Resource library</li>
           </ul>
         </div>
       </div>
