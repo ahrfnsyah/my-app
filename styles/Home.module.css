@@ -1,40 +1,84 @@
-/* styles/Home.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
 
+.wrapper {
+  font-family: 'Playfair Display', serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f7f2;
+}
 
-.container {
+/* ===== HERO SECTION ===== */
+.heroSection {
+  position: relative;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #f0f4f8;
-  font-family: 'Playfair Display', cursive;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroImage {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* transparansi untuk baca teks */
+  z-index: 1;
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(3px);
 }
 
 .title {
-  font-size: 7rem;
-  color: #2c3e50;
+  font-size: 4rem;
+  margin: 0.5rem 0;
 }
 
-.title1 {
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #eee;
+}
+
+.ctaButton {
+  background-color: white;
+  color: #222;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 0.5rem;
   font-size: 1rem;
-  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.button {
-  background-color: #4CAF50; /* Warna latar belakang */
-  color: white; /* Warna teks */
-  padding: 10px 20px; /* Padding */
-  text-align: center; /* Penataan teks */
-  display: inline-block; /* Menyusun tombol dalam satu baris */
-  font-size: 16px; /* Ukuran font */
-  border-radius: 5px; /* Sudut tombol melengkung */
-  text-decoration: none; /* Menghapus garis bawah */
-  margin-top: 20px; /* Jarak antara teks dan tombol */
+.ctaButton:hover {
+  transform: translateY(-3px);
+  background-color: #3D8D7A;
 }
-
-.button:hover {
-  background-color: #45a049; /* Warna latar belakang saat hover */
-}
-

@@ -135,26 +135,28 @@ const Dashboard: React.FC = () => {
 
   {/* ✅ Loading Screen */}
   {isLoadingChart && (
-    <div
-      style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: 'rgba(255,255,255,0.8)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: 10,
-        fontSize: 18,
-        fontWeight: '500',
-        color: '#333',
-      }}
-    >
-      ⏳ Memuat prediksi grafik...
-    </div>
-  )}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      background: 'rgba(255,255,255,0.8)',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 10,
+      fontSize: 18,
+      fontWeight: '500',
+      color: '#333',
+      borderRadius: 20, // ✅ Ini bagian yang menambah lengkungan
+    }}
+  >
+    ⏳ Memuat prediksi grafik...
+  </div>
+)}
+
 
   {/* ✅ Pesan Awal Sebelum Prediksi */}
   {!predictedCommodity || chartData.length <= 1 ? (
